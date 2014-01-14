@@ -178,7 +178,7 @@ var map = {
 		}
 
 
-		d3.json('world4.json', function(error, world) {
+		d3.json('world.json', function(error, world) {
 			var asia, africa, europe, americas;
 			asia = {type: 'FeatureCollection', name: 'Asia', id:2, features: world.features.filter(function(d) { return d.properties.group=='Asia Pacific'; })};
 			africa = {type: 'FeatureCollection', name: 'Africa', id:3, features: world.features.filter(function(d) { return d.properties.group=='Africa and Middle East'; })};
